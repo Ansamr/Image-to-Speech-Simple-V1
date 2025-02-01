@@ -29,7 +29,7 @@ def generate_story(caption):
     inputs = story_tokenizer(prompt, return_tensors="pt", max_length=50, truncation=True)
 
     # Generate story
-    outputs = story_model.generate(**inputs, max_length=20, num_return_sequences=1)
+    outputs = story_model.generate(**inputs, max_length=50, num_return_sequences=1)
     story = story_tokenizer.decode(outputs[0], skip_special_tokens=True)
     return story
 
