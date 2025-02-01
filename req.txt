@@ -1,0 +1,7 @@
+streamlit
+transformers
+gTTS
+torch
+torchvision
+Pillow
+requests
